@@ -19,7 +19,7 @@ WebDriver browser = new ChromeDriver();
 String url = "file:///C:/Users/priya/Desktop/index.htm";
 browser.get(url);
 
-//Click on the ìGoogleî hyperlink
+//Click on the ‚ÄúGoogle‚Äù hyperlink
 
 WebElement link = browser.findElement(By.xpath("//a[contains(text(), 'Google')]"));
 link.click();
@@ -28,21 +28,22 @@ link.click();
 
 browser.navigate().back();
 
-//Select the ìGreenî in color drop down
+//Select the ‚ÄúGreen‚Äù in color drop down
 
 WebElement color = browser.findElement(By.xpath("//*[@id= 'SelectID_One']//child::option[2]"));
 color.click();
+		
 
 Thread.sleep(5000);
 
-//Select the ìOrangeî in the fruit drop down
+//Select the ‚ÄúOrange‚Äù in the fruit drop down
 
 WebElement fruit = browser.findElement(By.xpath("//*[@id= 'SelectID_Two']//child::option[text() = 'Orange']"));
 fruit.click();
 
 Thread.sleep(5000);
 
-//Select the ìElephantî in the animal drop down	
+//Select the ‚ÄúElephant‚Äù in the animal drop down	
 
 WebElement animal = browser.findElement(By.xpath("//*[@id= 'SelectID_Three']//child::option[text() = 'Elephant']"));
 animal.click();	
@@ -52,3 +53,5 @@ Thread.sleep(5000);
 System.out.println("Program Executed Successfully!");
 }	
 }
+
+		//End
